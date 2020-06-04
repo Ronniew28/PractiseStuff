@@ -1,0 +1,24 @@
+/An example of a method
+package method1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Method1 {
+    int age;
+    
+        public Method1(int Method1age) {
+            age = Method1age;
+                    }
+        
+                    public void bark() {
+                        System.out.println("Woof woof!!");
+                    }
+    
+        public static void main(String[] args) {
+        Method1 code = new Method1(7);
+        code.bark();
+    }
+    
+}
