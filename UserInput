@@ -1,0 +1,27 @@
+
+package userinputpractise;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class UserInputPractise {
+
+    
+    public static void main(String[] args) {
+        Scanner myVar = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int num = myVar.nextInt();
+        System.out.println("The number you entered is " + num);
+        
+        System.out.println();
+        
+      //Text input
+      System.out.print("Enter a word: ");
+      Scanner word = new Scanner(System.in); 
+      System.out.println("You entered: " + word.nextLine());
+    }
+    
+}
