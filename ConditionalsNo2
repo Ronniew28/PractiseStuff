@@ -1,0 +1,45 @@
+
+package conditionalsno2;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ConditionalsNo2 {
+
+    
+    public static void main(String[] args) {
+        //IF-ELSE STATEMENT
+        int age = 20;
+            if (age < 21) {
+                System.out.println("Too young");
+            }
+            else {
+                System.out.println("Right age");
+            }
+         
+            
+        int number = 25;
+            if (number < 20) {
+                System.out.println("Number < 20");
+            }
+            else {
+                System.out.println("Some text");
+            } 
+            
+            
+        //ELSE IF STATEMENT
+        int score = 10;
+            if (score <= 0) {
+                System.out.println ("No grade");
+            }
+            else if (score == 5) {
+                System.out.println("C grade");
+            }
+            else if (score >=10) {
+                System.out.println("A+ grade");
+            }
+        
+    }
+    
+}
