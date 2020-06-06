@@ -1,0 +1,25 @@
+
+package classes;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Classes {
+    static void greeting() {//method
+        System.out.println("Greetings Earthling");
+    }
+    static void quote() {//method
+        System.out.println("Im bored");
+    }
+    static void signOff() {//method
+        System.out.println("And its a goodnight from me");
+    }
+    
+    public static void main(String[] args) {
+        greeting();
+        quote();
+        signOff();
+    }
+    
+}
