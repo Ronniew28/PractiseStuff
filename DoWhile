@@ -1,0 +1,28 @@
+
+package dowhile;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class DoWhile {
+
+    
+    public static void main(String[] args) {
+        int a = 1;
+            do {
+                System.out.println(a);
+                a++;
+            }
+            while (a<=5);
+            
+            System.out.println();
+            
+        int x = 1;
+            do {
+                System.out.println(x);
+            }
+            while(x<0);
+    }
+    
+}
