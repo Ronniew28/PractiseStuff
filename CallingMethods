@@ -1,0 +1,27 @@
+
+package callingmethods;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class CallingMethods {
+    static void cars(){
+        System.out.println("Ferrari");
+    }
+    
+    static void bus() {
+        System.out.println("Routemaster");
+    }
+    
+    static void plane() {
+        System.out.println("Airbus-A320");
+    }
+    
+    public static void main(String[] args) {
+      cars() ;
+      bus();
+      plane();
+    }
+    
+}
