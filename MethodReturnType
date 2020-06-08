@@ -1,0 +1,41 @@
+
+package methodreturntype;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodReturnType {
+    static int sum (int val1, int val2) {
+            return val1+val2;
+        }
+    
+    static int sum1 (int val3, int val4) {
+            return val3-val4;
+    }
+    
+    static int sum2 (int val5, int val6) {
+        return val5*val6;
+    }
+    
+    static int sum3 (int val7, int val8) {
+        return val7/val8;
+    }
+    
+    public static void main(String[] args) {
+        int x = sum(7,7);
+        System.out.println(x);
+        
+        int y = sum1(4,2);
+        System.out.println(y);
+        
+        int z = sum2(5,3);
+        System.out.println(z);
+        
+        int w = sum3(25,5);
+        System.out.println(w);
+        
+        
+    }
+    
+}
