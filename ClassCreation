@@ -1,0 +1,34 @@
+
+package classcreation;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ClassCreation {
+    void bark() { //declared bark method
+        System.out.println("Woof!!");
+    }
+    
+    void purr() {
+        System.out.println("Miaow!");
+    }
+    
+    void aircraft() {
+        System.out.println("Airbus-A320");
+    }
+    
+    
+    public static void main(String[] args) {
+      ClassCreation dog = new ClassCreation()  ;
+      dog.bark();
+      
+      ClassCreation cat = new ClassCreation();
+      cat.purr();
+      
+      ClassCreation plane = new ClassCreation();
+      plane.aircraft();
+    }
+    }
+    
+
