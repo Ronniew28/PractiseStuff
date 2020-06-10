@@ -1,0 +1,38 @@
+
+package classattributeswork;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ClassAttributesWork {
+    int total;
+    double weight;
+    String Name = "Tom";
+    String color;
+    //These are attribuutes of the above class
+    
+    void cargo() {
+        System.out.println("Fully Loaded");
+    }
+    
+    void title() {
+        System.out.println(Name);
+    }
+       
+    
+    public static void main(String[] args) {
+        ClassAttributesWork num1 = new ClassAttributesWork();
+        ClassAttributesWork num2 = new ClassAttributesWork();
+        ClassAttributesWork num3 = new ClassAttributesWork();
+        //These are multiple objects of the ClassAttributesWork class.
+        
+        //Using the dot syntax to access the attributes & methods
+        num1.cargo();
+        num2.title();
+        
+        String color = "Red";
+        System.out.println(color);
+    }
+    
+}
