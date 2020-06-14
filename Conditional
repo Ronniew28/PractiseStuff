@@ -1,0 +1,31 @@
+
+package conditional;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Conditional {
+
+    
+    public static void main(String[] args) {
+        int Fisherman = 2;
+        boolean isFishingTrip = false;
+            if(Fisherman >= 1) {
+                isFishingTrip = true;
+                System.out.println("Going Fishing");
+            }
+            
+        //False conditions
+        boolean isFisherman = false;
+            if (isFisherman){
+                System.out.println("Gone fishing");
+            }
+            else {
+                System.out.println("Still working");//this is output
+            }
+            
+                       
+                    }
+    
+}
