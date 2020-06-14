@@ -1,0 +1,43 @@
+
+package inputrun;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InputRun {
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a Number ");
+        int user_input_number = input.nextInt();
+        System.out.println("The number you entered is: " + user_input_number);
+        System.out.println();
+        
+        Scanner input1 = new Scanner(System.in);
+        System.out.println("Enter a Number ");
+        int user_input_number1 = input1.nextInt();
+        System.out.println("The number you entered is: " + user_input_number1);
+        System.out.println();
+                
+        int inputTotal = user_input_number + user_input_number;
+        
+        int num1 = 5;
+        int num2 = 7;
+        int num3 = num1 + num2;
+        
+        if (inputTotal >= num3) {
+            System.out.println("InputTotal > num3");
+        }
+        else if(inputTotal <= num3) {
+            System.out.println("InputTotal < num3");
+        }
+        else if(inputTotal == num3) {
+            System.out.println("InputTotal = num3");
+        }
+    }
+    
+}
