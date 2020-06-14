@@ -1,0 +1,37 @@
+
+package inputtext;
+
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InputText {
+
+    
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a word ");
+        String word = reader.readLine();
+        System.out.println("The word you entered is : " + word);
+        
+        BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a word ");
+        String word1 = reader1.readLine();
+        System.out.println("The second word you entered is : " + word1);
+        
+        String fullWords = word+ " "  +word1;
+        System.out.println("You entered " + fullWords);
+        
+        
+        
+        
+        
+     
+    }
+    
+}
