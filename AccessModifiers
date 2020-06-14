@@ -1,0 +1,40 @@
+
+package accessmodifierswork;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class AccessModifiersWork {
+    static int num1 = 5; //(Public)
+    private static String curse = "Feck";
+    protected static int num2 = 7;  
+    
+    
+    public static void main(String[] args) {
+    //PUBLIC Access Modifier
+    AccessModifiersWork nums = new AccessModifiersWork();
+    System.out.println("Num1 is: " + nums.num1);
+    
+    //PRIVATE Access Modifier
+    AccessModifiersWork swear = new AccessModifiersWork();
+    System.out.println("Curse is " + swear.curse);
+    
+    //DEFAULT Access Modifier
+    //When no access modifier for a class, methid or data member,
+    //it is said to have the default access odifier by default
+    
+    //Protected Access Modifier
+    AccessModifiersWork numbers = new AccessModifiersWork();
+    System.out.println("Num2 is " + num2);
+    
+    
+    
+    
+    
+    
+    
+        
+    }
+    
+}
