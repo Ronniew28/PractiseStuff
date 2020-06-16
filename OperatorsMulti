@@ -1,0 +1,56 @@
+
+package relational.operators;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class RelationalOperators {
+
+    
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 6;
+        
+        //Relational Operators return Boolean values        
+        System.out.println(a < b);
+        System.out.println(a > b);
+        System.out.println(b < a);
+        System.out.println(a > b);
+        System.out.println(a <= b);
+        System.out.println(a >= b);
+        System.out.println(b <= a);
+        System.out.println(a >= b);
+        
+        System.out.println();
+        
+        //Can be done for double & float also
+        boolean b1 = 'a' < 'b';
+        boolean b2 = 'a' > 'b';
+        
+        System.out.println();
+        
+        //Equality Operators
+        //Can bbe used for all 8 primitives
+        int test1 = 7;
+        int test2 = 5;
+        
+        System.out.println(test1 == test2);//output false
+        System.out.println(test1 != test2);//output true
+        
+        System.out.println();
+        
+        //Logical Operators
+        int cars = 20;
+        int drivers = 5;
+        if (drivers < 20 || cars == 20) {
+            System.out.println("Not enough drivers!");
+        }
+        if (drivers != 20 && cars == 20) {
+            System.out.println("STILL Not enough drivers!");
+        }
+        
+        
+    }
+    
+}
