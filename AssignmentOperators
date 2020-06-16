@@ -1,0 +1,27 @@
+
+package assignmentoperatorswork;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class AssignmentOperatorsWork {
+
+    
+    public static void main(String[] args) {
+       int a = 10;
+       
+       System.out.println(a += 3); //output 13
+       
+       System.out.println(a -= 3); //output 10
+       
+       System.out.println(a *= 3); //output 30
+       
+       System.out.println(a /= 3); //output 10
+       
+       System.out.println(a %= 3); //output 1
+              
+        
+    }
+    
+}
