@@ -1,0 +1,24 @@
+
+package pkgreturn;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Return {
+    static int myMethod(int x) {
+        return 5 + x;
+    }
+    
+    static void noReturn() {
+        System.out.println("This method has no return value");// this is whats output
+    }
+    
+    public static void main(String[] args) {
+       System.out.println(myMethod(2));//Output 7
+       noReturn();
+       
+       
+    }
+    
+}
