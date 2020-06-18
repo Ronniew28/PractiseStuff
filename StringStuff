@@ -1,0 +1,59 @@
+
+package stringstuff;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringStuff {
+
+    
+    public static void main(String[] args) {
+        String quote = "Hello World";
+        System.out.println(quote);
+        
+        String quote1;
+        quote1 = "Hi there";
+        System.out.println(quote1);
+        
+        String quote2 = new String();
+        quote2 = "Test phrase";
+        System.out.println(quote2);
+        
+        String quote3 = new String("I'm coding here");
+        System.out.println(quote3);
+        
+        String quote4 = "Some text";
+        System.out.println(quote4);
+        String quote5 = quote4;
+        System.out.println(quote5);
+        
+        String quote6 = "This is a test";
+        quote6 = "This is an exam";
+        System.out.println(quote6);//assigns new string to same reference variable
+        
+        //STRING CONCATENATION
+        String word1 = "Hello";
+        String word2 = "there";
+        System.out.println(word1 + " " + word2);
+        
+        
+        String name1 = "Tom";
+        String name2 = "Dick";
+        String name3 = "Harry";
+        System.out.println(name1 + " " + name2 + " " +name3);
+        
+        String title1 = "cars";
+        String title2 = "planes";
+        int carNum = 4;
+        int planeNum = 5;
+        System.out.println(title2 + " " + planeNum);
+        
+        //toString method
+        //returns  the string representation of the object
+        Integer x = 5;
+        System.out.println(x.toString());
+        System.out.println(Integer.toString(7));
+    }
+    
+}
