@@ -1,0 +1,53 @@
+
+package objects;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Objects {
+    void car() { //car method declared in Objects
+        System.out.println("Ferrari");
+    }
+    void plane() {
+        System.out.println("Airbus");
+    }
+    void animal() {
+        System.out.println("Horse");
+    }
+    void county() {
+        System.out.println("Mayo");
+    }
+    void sayHello(String name)  {
+        System.out.println("Hello " + name);
+    }
+    void sayBye(String name1) {
+        System.out.println("Bye " + name1);
+    }
+        
+      
+    public static void main(String[] args) {
+        Objects motor = new Objects();//motor is an object of type Objects
+        motor.car();//we can call its car method
+        
+        Objects aircraft = new Objects();
+        aircraft.plane();
+        
+        Objects gg = new Objects();
+        gg.animal();
+        
+        Objects west = new Objects();
+        west.county();
+        
+        Objects title = new Objects();
+        title.sayHello("Tom");
+        
+        Objects goodbye = new Objects();
+        goodbye.sayBye("Dick");
+        
+        
+        
+        
+    }
+    
+}
