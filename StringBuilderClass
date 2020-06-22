@@ -1,0 +1,64 @@
+
+package stringbuilderclass;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringbuilderClass {
+
+    
+    public static void main(String[] args) {
+        StringBuilder alpha = new StringBuilder();
+            for (char current = 'a'; current <= 'z'; current++)
+            alpha.append(current);
+                System.out.println(alpha);
+                
+        StringBuilder beta = new StringBuilder();
+            for (char letter = 'z'; letter >= 'a'; letter --)
+            beta.append(letter)    ;
+                System.out.println(beta);
+                
+        StringBuilder sb = new StringBuilder("start");
+        sb.append("+middle");
+        StringBuilder same = sb.append("+end");
+        System.out.println(sb);
+        
+        //StringBuilder creation
+        StringBuilder t1 = new StringBuilder();
+        StringBuilder t2 = new StringBuilder("Hello World");
+        StringBuilder t3 = new StringBuilder(10);
+        
+        //StringBuilder Methods
+        StringBuilder a1 = new StringBuilder("Hello World ");
+        
+        char ch = a1.charAt(6);
+        System.out.println(ch);//output o
+        
+        System.out.println(a1.indexOf("W"));//output 5
+        System.out.println(a1.indexOf("rld"));//output 7
+        
+        a1.append("s");
+        System.out.println(a1);
+        a1.append(" Ladies ").append("Everywhere ");
+        System.out.println(a1);
+        
+        a1.insert(2, "*");
+        a1.insert(9, "*");
+        System.out.println(a1);
+        
+        a1.deleteCharAt(7);
+        System.out.println(a1);//deleted W
+        
+        a1.deleteCharAt(13);
+        System.out.println(a1);//deleted S
+        
+        a1.reverse();
+        System.out.println(a1);
+        
+        String s1 = a1.toString();
+        System.out.println(s1);//convert to String for final output
+        
+    }
+    
+}
