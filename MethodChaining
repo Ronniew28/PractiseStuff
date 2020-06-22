@@ -1,0 +1,21 @@
+
+package methodchainingwork;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodChainingWork {
+
+    
+    public static void main(String[] args) {
+        
+        String pirateMessage1 = " Buried Treasure Chest! ".trim() .toLowerCase() .replace("e","3");
+        String word = "Explosives".trim() .toLowerCase() .replace("o", "r");
+        System.out.println(pirateMessage1);
+        System.out.println(word);
+        
+        
+    }
+    
+}
