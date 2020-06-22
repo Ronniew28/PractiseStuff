@@ -1,0 +1,64 @@
+
+package stringclassmethods;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringClassMethods {
+
+    
+    public static void main(String[] args) {
+        String pirateMessage = " Buried Treasure Chest! ";
+        
+        //charAt
+        char c2 = pirateMessage.charAt(4);
+        System.out.println(c2);// output i
+        
+        char c3 = pirateMessage.charAt(7);
+        System.out.println(c3);
+        System.out.println("The above returned a blank space correctly");
+        
+        //indexOf
+        int num1 = pirateMessage.indexOf('T');
+        System.out.println(num1); //output 8
+        
+        int num2 = pirateMessage.indexOf('C');
+        System.out.println(num2); //output 17
+        
+        //length
+        int len = pirateMessage.length();
+        System.out.println(len); //output 24
+        
+        //concat
+        String stuff = pirateMessage.concat(pirateMessage);
+        System.out.println(stuff);
+        
+        //replace
+        String replace1 = pirateMessage.replace('e' , 'o');
+        System.out.println(replace1);
+        
+        //startsWith
+        System.out.println("abc".startsWith("A"));//output false
+        System.out.println("abc".startsWith("a"));//output true
+        
+        //endswith
+        System.out.println("def".endsWith("f"));//output true
+        System.out.println("def".endsWith("F"));//output false
+        
+        //substring
+        String test = pirateMessage.substring(3, 5); 
+        System.out.println(test);
+        
+        //toLowerCasee
+        String lc = pirateMessage.toLowerCase();
+        System.out.println(lc);
+        
+        //toUpperCase
+        String uc = pirateMessage.toUpperCase();
+        System.out.println(uc);
+        
+        
+    }
+    
+}
