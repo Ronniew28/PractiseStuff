@@ -1,0 +1,123 @@
+
+package primitivevariables;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class PrimitiveVariables {
+
+    
+    public static void main(String[] args) {
+        //Boolean
+        boolean fact = true;
+        System.out.println(fact);
+            if (fact != false) {
+                System.out.println("The fact is true");
+            }
+            
+        //Char
+        char c1 = 'D';
+        char c2 = 'o';
+        char c3 = 'g';
+        char c4 = '.';
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
+        System.out.println(c4);
+        
+        //byte
+        byte b1 = 4; //implicit cast from integer to byte
+        byte b2 = (byte) 7; //explicit cast from integer to byte
+        System.out.println(b1);
+        System.out.println(b2);
+        
+        //short
+        short s1 = 77;
+        short s2 = 7345;
+        System.out.println(s1);
+        System.out.println(s2);
+        
+        //integer
+        int f1 = 275;
+        
+        char c5 = '\u0008';
+        int cc5 = c5;
+        System.out.println(cc5);//implicit cast from char to int
+        
+        byte bb1 = 75;
+        int bb2 = bb1;
+        System.out.println(bb2);//implicit cast from byte to int
+        
+        short hh1 = 155;
+        int hh2 = hh1;//implicit cast from short to int
+        System.out.println(hh2);
+        
+        //long
+        long bigNum = 7453429634L;
+        System.out.println(bigNum);
+        
+        //float
+        float g1 = 75391.87F;
+        System.out.println(g1);
+        
+        //double
+        double dd1 = 5.76;
+        double dd2 = 7.7D;
+        double dd3 = (double)7;
+        System.out.println(dd1);
+        System.out.println(dd2);
+        System.out.println(dd3);
+        
+        System.out.println("**************************");
+        System.out.println("**************************");
+        System.out.println();
+        
+        System.out.println("Wrapper Classes");
+        
+        //int
+        int num1 = Integer.parseInt("123");// Converts a string to an int primitive
+        System.out.println(num1);
+        
+        int num2 = Integer.valueOf("123");//Converts a string to an Integer wrapper class
+        System.out.println(num2);
+        
+        //Boolean
+        boolean fact1 = Boolean.parseBoolean("true");//Convert to primitive
+        boolean fact2 = Boolean.valueOf("TRUE");//convert to wrapper class
+        System.out.println(fact1);
+        System.out.println(fact2);
+        
+        //Byte
+        byte bbb1 = Byte.parseByte("77");//Convert to primitive
+        byte bbb2 = Byte.valueOf("2");//Convert to wrapper class
+        System.out.println(bbb1);
+        System.out.println(bbb2);       
+        
+        //short
+        short sss1 = Short.parseShort("5");//Convert to primitive
+        short sss2 = Short.valueOf("9");//Convert to wrapper class
+        System.out.println(sss1);
+        System.out.println(sss2);
+        
+        //long
+        long ll1 = Long.parseLong("364288");//Convert to primitive
+        long ll2 = Long.valueOf("864731");//Convert to wrapper class
+        System.out.println(ll1);
+        System.out.println(ll2);
+        
+        //float
+        float ft1 = Float.parseFloat("17");//Convert to primitive
+        float ft2 = Float.valueOf("17");//convert to wrapper class
+        System.out.println(ft1);
+        System.out.println(ft2);
+        
+        //double
+        double db1 = Double.parseDouble("3.7");//Convert to primitive
+        double db2 = Double.parseDouble("9.8");//Convert to wrapper class
+        System.out.println(db1);
+        System.out.println(db2);
+       
+    }
+    
+}
