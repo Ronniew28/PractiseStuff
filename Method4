@@ -1,0 +1,27 @@
+
+package methodwork2;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodWork2 {
+     static int sum(int num1, int num2) {
+         int result = num1 + num2;
+         return result;
+     }   
+            
+         
+    public static void main(String[] args) {
+        int x = sum(7,5);
+        int y = 9;
+            if (x>y) {
+                System.out.println("X>Y");//this is output
+            }
+            else {
+                System.out.println("Y>X");
+            }
+        System.out.println(x);//output 12
+    }
+    
+}
