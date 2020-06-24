@@ -1,0 +1,21 @@
+
+package enums1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Enums1 {
+    enum cards {
+            Clubs, Diamonds, Hearts, Spades;            
+        }
+    
+    public static void main(String[] args) {
+        cards card1 = cards.Clubs;
+        System.out.println(card1);
+        System.out.println();
+        
+        
+    }
+    
+}
