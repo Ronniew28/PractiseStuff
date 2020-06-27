@@ -1,0 +1,29 @@
+
+package methodwork3;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodWork3 {
+    static void dogName() {
+        System.out.println("Fido");
+    }
+    
+    static void dogName1(String name) {
+        System.out.println("Hello " + name);
+    }
+    
+    static int sum(int num1, int num2) {
+        return num1 + num2;
+    }
+    
+    public static void main(String[] args) {
+      dogName();
+      dogName1("Fido");
+      
+      int x = sum(7, 7);
+      System.out.println(x);
+    }
+    
+}
