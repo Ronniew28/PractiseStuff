@@ -1,0 +1,29 @@
+
+package passingtomethod;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class PassingToMethod {
+    //Passing primitives by value to a method
+       
+        public void addTwo(int value) {
+         System.out.println(value); //output 7
+         value = value + 2; //adds 2 to 7
+         System.out.println("The new value is " + value);
+        }
+        
+        public void multiplyTwo(int digit) {
+            digit = digit * 2;
+            System.out.println("The answer is " + digit);//output 10
+        }
+                    
+    
+    public static void main(String[] args) {
+        PassingToMethod result = new PassingToMethod();
+        result.addTwo(7);
+        result.multiplyTwo(5);
+    }
+    
+}
