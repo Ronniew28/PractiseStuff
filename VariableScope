@@ -1,0 +1,26 @@
+
+package variable_scope;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Variable_Scope {
+    //Example of a local variable
+    //A variable defined within a method
+
+    public int valid() {
+        int y = 10;
+        int x;
+        x = 3;
+        int reply = x + y;
+        return reply;
+        
+    }
+    
+    public static void main(String[] args) {
+        Variable_Scope output = new Variable_Scope();
+        output.valid();
+        }
+    
+}
