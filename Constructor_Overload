@@ -1,0 +1,32 @@
+
+package constructor_overload;
+//To overload declare another constructor with the same name but different parameter list
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Constructor_Overload {
+    private String color;
+    private int weight;
+        public Constructor_Overload(int weight) { //first constructor
+            //this.weight = weight;
+            //color = "brown";
+            this(weight, "brown");
+        }
+            public Constructor_Overload(int weight, String color) { //second constructor
+                this.weight = weight;
+                this.color = color;
+            }
+            
+            public void print() {
+                System.out.println(weight + " " + color);
+            }
+    
+    public static void main(String[] args) {
+       Constructor_Overload work = new Constructor_Overload(7);
+       work.print();
+       //ouput 7, brown
+    }
+    
+}
