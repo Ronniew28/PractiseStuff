@@ -1,0 +1,29 @@
+
+package constructors3;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Constructors3 {
+    int num1;
+    int num2;
+    int num3;
+    
+        public Constructors3() {
+            num1 = 7;
+            num2 = 10;
+            
+               }
+        
+               public int answer() {
+                 return num3;   
+               }
+    
+    public static void main(String[] args) {
+        Constructors3 result = new Constructors3();
+        System.out.println("The result is " + result);
+        
+    }
+    
+}
