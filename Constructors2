@@ -1,0 +1,30 @@
+
+package constructors2;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Constructors2 {
+    String color;
+    String anotherColor;
+    String lastColor;
+    
+        public Constructors2 (String color) {
+            this.color = color;
+            this.anotherColor = color;
+            this.lastColor = color;
+        }
+    
+    public static void main(String[] args) {
+       Constructors2 shade = new Constructors2("blue");
+       System.out.println("The first color is " + shade.color);
+       
+       Constructors2 shade2 = new Constructors2("red");
+       System.out.println("The second color is " + shade2.color);
+       
+       Constructors2 shade3 = new Constructors2("yellow");
+       System.out.println("The final color is " + shade3.color);
+    }
+    
+}
