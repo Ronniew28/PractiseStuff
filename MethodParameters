@@ -1,0 +1,18 @@
+
+package methodparameters1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodParameters1 {
+   //The variables that are passed to the method from the calling segment of code
+    int speed (int speed1, int speed2) {
+        return speed1 / speed2;
+    }
+    
+    public static void main(String[] args) {
+        
+    }
+    
+}
