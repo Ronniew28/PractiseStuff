@@ -1,0 +1,27 @@
+
+package thiskeyword1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ThisKeyword1 {
+     int x;
+     int z; 
+     
+        //Constructor with a parameter
+        public ThisKeyword1(int x, int z) {
+            this.x = x;
+            this.z = z;
+        }
+        
+    
+    public static void main(String[] args) {
+        
+        //Call the Constructor
+        ThisKeyword1 myObj = new ThisKeyword1(7, 7);
+        System.out.println("X is " + myObj.x);
+        System.out.println("Y is " + myObj.z);
+    }
+    
+}
