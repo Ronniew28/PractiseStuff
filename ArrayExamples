@@ -1,0 +1,97 @@
+
+package arrayno2;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayNo2 {
+
+    
+    public static void main(String[] args) {
+        //One-Dimensional array
+        int[]sample = new int[3];
+        sample[0] = 5;
+        sample[1] = 7;
+        sample[2] = 9;
+        for(int run: sample) {
+            System.out.println(run);
+        }
+        int[]sample1 = new int[3];
+        sample1[0] = 5;
+        sample1[1] = 7;
+        sample1[2] = 9;
+        System.out.println("First: " + sample1[0] + " Second: " + sample1[1] + " Third: " + sample1[2]);
+        
+        System.out.println();
+        
+        String[]stuff = {"Dog", "Cat", "Horse"};
+        System.out.println(stuff[0]);
+        System.out.println(stuff[1]);
+        System.out.println(stuff[2]);
+        System.out.println("Animal1:" + stuff[0] + " Animal2:" + stuff[1] + " Animal3:" + stuff[2]);
+        
+        System.out.println();
+        
+        String[]trees = {"Oak", "Ash", "Elm"};//Array sort
+        Arrays.sort(trees);
+            for (String greens: trees)
+            System.out.println(greens + " ");
+            
+        System.out.println();
+            
+        String[] stringexample = {"6" , "9" , "1"};//Array sort
+        Arrays.sort(stringexample);
+            for (String string : stringexample)
+                System.out.print(string + " ");
+                
+            System.out.println();  
+                
+        //Using One-Dimensional Arrays
+        String[]names = {"Tom", "Dick", "Harry"};
+        System.out.println(names[1]) ;
+        
+        if (names[2].equalsIgnoreCase("Harry")){
+            System.out.println(names[2].toLowerCase());
+        }
+        
+        System.out.println(names.length);//Array length
+        
+        System.out.println(names[1].contains("ic"));//Character sequence
+        
+        System.out.println();
+        
+        //----------------------------------------------------------------------
+        
+        //Multi Dimensional Arrays
+        int[][]run = {{1, 2, 3} , {4, 5, 6}};
+        int digit = run [0][0];
+        System.out.println(digit);//output 1
+        System.out.println();
+        int digit1 = run [1][1];
+        System.out.println(digit1);//output 5
+        
+        int [][]bigRun = {{1,2}, {3,4,5}, {6, 7, 8, 9, 10}};
+        int ans = bigRun[2][2];
+        System.out.println(ans);//output 8
+        System.out.println();
+        
+        int[][][]multi3D = new int[2][][];//NB: length of first dimension must be defined
+        multi3D[0] = new int[5][];
+        multi3D[1] = new int[7][];
+        multi3D[0][0] = new int[9];
+        multi3D[0][1] = new int[11];
+
+        //------------------------------------------------------------------------
+        
+        //Searching an array
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println(Arrays.binarySearch(numbers, 5));
+        System.out.println(Arrays.binarySearch(numbers, 9));
+        System.out.println(Arrays.binarySearch(numbers, 7));
+        System.out.println();
+        }
+    }
+ 
