@@ -1,0 +1,31 @@
+
+package this_keyword_work;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class This_Keyword_Work {
+    String lastName;
+    int stuff;
+    
+        public This_Keyword_Work(String lastName) {
+            this.lastName = lastName;
+            }
+                
+        public This_Keyword_Work(int stuff) {
+            this.lastName = lastName;
+            this.stuff = stuff;
+            }
+       
+                
+    
+    public static void main(String[] args) {
+       This_Keyword_Work last = new This_Keyword_Work("Smurf");
+       System.out.println("Last name is " + last.lastName);
+       
+       This_Keyword_Work first = new This_Keyword_Work(7);
+       System.out.println("First name is " + first.stuff );
+    }
+    
+}
