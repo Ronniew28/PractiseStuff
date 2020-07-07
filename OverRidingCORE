@@ -1,0 +1,36 @@
+
+package overriding1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class OverRiding1 {
+
+    int num1;
+    int num2;
+    int num3;
+    
+        public void numbers(int num1, int num2) {
+            num3 = num1 + num2;
+            System.out.println("The answer is " + num3);
+        }
+        
+            public static class addition extends OverRiding1 {
+                public void numbers(int num1, int num2) { //NB: The numbers method overrides the numbers method in the OverRiding1 class
+                    num3 = num1 * num2;
+                    System.out.println("The extended result is " + num3);
+                }
+            }
+                     
+   
+    public static void main(String[] args) {
+       int num1 = 7;
+       int num2 = 8;
+       addition runs = new addition() ;
+       runs.numbers(num1, num2);
+       //When addition object is created & the numbers method is called the code in the addition class will be executed.
+       
+       }
+    
+}
