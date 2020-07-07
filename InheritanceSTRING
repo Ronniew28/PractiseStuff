@@ -1,0 +1,34 @@
+
+package javainheritance;
+
+//A concise example of how Java Inheritance works
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class JavaInheritance { //base or superclass
+    String word1;
+    String word2;
+    String word3;
+    
+        public void combo (String word1, String word2) {
+            word3 = word1+word2;
+            System.out.println("The greeting is " + word3);
+        }
+        
+        public static class sample extends JavaInheritance {
+            public void combo (String word1, String word2) {
+                word3 = word1 + word2;
+                System.out.println("The EXTENDED GREETING is " + word3);
+            }
+        }
+    
+    public static void main(String[] args) {
+      String word1 = "Hello";
+      String word2 = "World";
+      sample runs = new sample();
+      runs.combo(word1, word2);
+    }
+    
+}
