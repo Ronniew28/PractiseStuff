@@ -1,0 +1,46 @@
+
+package arraylistno3;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayListNo3 {
+
+   
+    public static void main(String[] args) {
+    //Using the ArrayList class
+    ArrayList <Integer> int1 =  new ArrayList<Integer>();
+    int1.add(7);
+    int1.add(9);
+    int1.add(77);
+    System.out.println(int1);//Access the complete arraylist
+    System.out.println(int1.get(0));//Acess individual arraylist items
+    System.out.println(int1.get(1));
+    System.out.println(int1.get(2));
+    
+    Integer no1 = 2;
+    Integer no2 = 4;
+    Integer no3 = 6;
+    ArrayList <Integer> nums = new ArrayList<>();
+    nums.add(no1);
+    nums.add(no2);
+    nums.add(no3);
+    System.out.println(nums);//Access the complete arraylist
+    System.out.println(nums.get(0));//Acess individual arraylist items
+    System.out.println(nums.get(1));
+    System.out.println(nums.get(2));
+    
+    ArrayList <String> names = new ArrayList<String>();
+    names.add("Tom");
+    names.add("Dick");
+    names.add("Harry");
+    System.out.println(names);
+    
+    
+    
+    }
+    
+}
