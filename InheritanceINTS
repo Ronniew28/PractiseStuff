@@ -1,0 +1,32 @@
+
+package javainheritanceints;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class JavaInheritanceINTS {//base or superclass
+    int num1;
+    int num2;
+    int num3;
+    
+        public void numbers(int num1, int num2) {
+            num3 = num1 + num2;
+            System.out.println("The answer is " + num3);
+        }
+        
+            public static class addition extends JavaInheritanceINTS {
+                public void numbers(int num1, int num2) {
+                    num3 = num1 + num2;
+                    System.out.println("The extended result is " + num3);
+                }
+            }
+    
+    public static void main(String[] args) {
+       int num1 = 7;
+       int num2 = 8;
+       addition runs = new addition() ;
+       runs.numbers(num1, num2);
+    }
+    
+}
