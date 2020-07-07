@@ -1,0 +1,22 @@
+
+package arrayadd1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayAdd1 {
+
+    
+    public static void main(String[] args) {
+        int[] myArray = {1,2,3,4,5};
+        int sum = 0;
+        for (int x = 0; x<myArray.length; x++) {
+            sum += myArray[x];
+        }
+        System.out.println("The array total is " + sum);
+        System.out.println("The average of the array is " + sum/myArray.length);
+        
+    }
+    
+}
