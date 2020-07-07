@@ -1,0 +1,36 @@
+
+package encapsulationno2;
+
+//A encapsulation example using just one element
+//NB: To apply getters and setters, RC on String car
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class EncapsulationNo2 {
+    private String car;
+    
+        public String getcar() {
+            return car;
+        }
+    
+            public void setcar(String newcar) {
+            car = newcar;
+        }
+    
+    public static void main(String[] args) {
+       EncapsulationNo2 encap  = new EncapsulationNo2(); 
+       encap.setcar("Ferrari");
+       System.out.println("The car is " + encap.getcar());
+    }
+
+    
+    /**
+     * @param car the car to set
+     */
+    public void setCar(String car) {
+        this.car = car;
+    } 
+    
+}
