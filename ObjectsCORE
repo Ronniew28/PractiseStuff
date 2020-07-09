@@ -1,0 +1,28 @@
+
+package objectscore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ObjectsCore {
+
+       public void car() { //car method declared in Objects
+        System.out.println("Ferrari");
+        }
+        
+        public void dog() {
+            System.out.println("Sheepdog");
+        }
+    
+    
+    public static void main(String[] args) {
+        
+        ObjectsCore motor = new ObjectsCore();//motor is an object of type Objects
+        motor.car();//we can call its car method
+        
+        ObjectsCore pet = new ObjectsCore();
+        pet.dog();
+    }
+    
+}
