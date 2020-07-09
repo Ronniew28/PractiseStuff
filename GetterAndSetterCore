@@ -1,0 +1,32 @@
+
+package getterandsettercore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class GetterAndSetterCore {
+
+    private int score; //right click on variable & select refactor, encapsulate fields
+    
+        
+    
+    public static void main(String[] args) {
+        
+    }
+
+    /**
+     * @return the score
+     */
+    public int getScore() {
+        return this.score;
+    }
+
+    /**
+     * @param score the score to set
+     */
+    public void setScore(int score) {
+        this.score = score;
+    }
+    
+}
