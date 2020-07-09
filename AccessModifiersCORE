@@ -1,0 +1,59 @@
+
+package accessmodifierscore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class AccessModifiersCore {
+    //Public, Protected, Private
+    
+    //Private
+    private int number = 7;
+    private String test;
+    //These can only be accessed by other methods in the same class
+    //Subclasses cannot access these
+    
+    //Default(package-private)
+    //Allows access to its methods & instance variables from code in the same package
+    //No keyword to indicate its use
+    int total;
+    double sets;
+    
+    //Proteected
+    //Same as default but allows subclassess outside of the package to access its methods or instances variables
+    protected String digit;
+    protected int height;
+    
+    //Public
+    //No access restrictions
+    public int planes;
+    public String name;
+    
+    //--------------------------------------------------------------------------
+    
+    public String first = "Hello";
+    private String second = "How";
+    protected String third = "are";
+    private String four = "you?";
+    
+    public static void main(String[] args) {
+    
+    AccessModifiersCore one = new AccessModifiersCore();
+    System.out.println("First word is " + one.first); // method name followed by string name
+    
+    AccessModifiersCore two = new AccessModifiersCore();
+    System.out.println("Second word is " + two.second);
+    
+    AccessModifiersCore three = new AccessModifiersCore();
+    System.out.println("Third word is " + three.third);
+    
+    AccessModifiersCore four = new AccessModifiersCore();
+    System.out.println("Fourth word is " + four.four);
+    
+    AccessModifiersCore five = new AccessModifiersCore();
+    System.out.println(five.number);
+        
+    }
+    
+}
