@@ -1,0 +1,28 @@
+
+package methodcore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodCore {
+
+     public static void m1() {
+            System.out.println("First method");
+        }
+     public static void m2() {
+         System.out.println("Second method");
+     }
+     public static void m3(String word) {
+         System.out.println("This is a " + word);
+     }
+        
+    
+    public static void main(String[] args) {
+         m1();
+         m2();
+         m3("Method");
+         
+    }
+    
+}
