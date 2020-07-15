@@ -1,0 +1,40 @@
+
+package encapsulationcore1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class EncapsulationCORE1 {
+    
+    private String firstName;
+    private String lastName;
+    
+    public static void main(String[] args) {
+                
+    }
+    
+    public String getFirstName() {
+        return firstName;
+    }
+
+        public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    
+    public String getLastName() {
+        return lastName;
+    }
+
+    
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    //This was created by setting getters and setters within the IDE
+    //As of now I've no idea how to generate output
+    //Code structure is correct though
+        
+    
+}
