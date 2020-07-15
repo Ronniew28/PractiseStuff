@@ -1,0 +1,25 @@
+
+package constructorscore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ConstructorsCORE {
+
+        public ConstructorsCORE() {
+            System.out.println("This is a Constructor");
+        }
+        
+        public static class horses {
+        public horses() {
+            System.out.println("Ride horses");
+        }
+        }
+    
+    public static void main(String[] args) {
+        new ConstructorsCORE();
+        horses neds = new horses();
+    }
+    
+}
