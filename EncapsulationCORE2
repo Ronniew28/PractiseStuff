@@ -1,0 +1,41 @@
+
+package encapsulationcore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class EncapsulationCORE {
+        //Part 1
+        private String firstName;
+        private String lastName;
+        
+        //Part 2
+        public String getFirstName() {
+            return firstName;
+        }
+        
+        public String getSecondName() {
+            return lastName;
+        }
+        
+        //Part 3
+        public void setName(String newName){
+        firstName = newName;
+        }
+        
+        public void setSurname(String secondName) {
+        lastName = secondName;    
+        }
+        
+    
+    public static void main(String[] args) {
+        EncapsulationCORE encap = new EncapsulationCORE();
+        encap.setName("Tom");
+        encap.setSurname("Jones");
+        
+        System.out.println("First name: " + encap.getFirstName());
+        System.out.println("Second name: " + encap.getSecondName());
+    }
+    
+}
