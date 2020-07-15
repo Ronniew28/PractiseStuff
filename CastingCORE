@@ -1,0 +1,50 @@
+
+package castingcore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class CastingCORE {
+
+    
+    public static void main(String[] args) {
+        
+        double detailedScore = 1.2;
+        float score = (float)detailedScore;
+        System.out.println(score);
+        
+        System.out.println();
+        
+        int i = 1236;
+        byte b = (byte) i;
+        System.out.println("Byte : " +b);
+        
+        System.out.println();
+        
+        double price = 9.99;
+        int integerPrice = (int) price;
+        System.out.println("The Integer is " + integerPrice);
+        
+        System.out.println();
+        
+        float num = 7.987f;
+        double newNum = (double)num;
+        System.out.println(newNum);
+        
+        System.out.println();
+        
+        //Making an Integer object from an int
+        int z = 7;
+        Integer obj1 = new Integer(z); //not casting
+        Integer obj2 = (Integer)i;
+        Integer obj3 = i;
+        System.out.println(obj1);
+        System.out.println(obj2);
+        System.out.println(obj3);
+        
+        System.out.println();
+        
+    }
+    
+}
