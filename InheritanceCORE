@@ -1,0 +1,32 @@
+
+package inheritancecore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InheritanceCORE {
+    
+    int z;
+    
+        public void addition(int x, int y) {
+            z=x+y;
+            System.out.println("The total is: " + z);
+        }
+        
+            public static class multiply extends InheritanceCORE {
+                public void multiplication(int x,int y) {
+                    z=x*y;
+                    System.out.println("The multiply answer is: " + z);
+                }
+            }
+    
+    public static void main(String[] args) {
+        int a = 7;
+        int b = 8;
+        multiply demo = new multiply();
+        demo.addition(a,b);
+        demo.multiplication(a, b);
+    }
+    
+}
