@@ -1,0 +1,92 @@
+
+package stringobjectsmethods;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringObjectsMethods {
+
+    
+    public static void main(String[] args) {
+        String quote = "Hello there world";
+        quote.replace("There", "The");
+        System.out.println(quote);//outputs the original quote. Strings are immutable remember
+        
+        String quote1;
+        quote1 = "hey there!";
+        System.out.println(quote1);
+        
+        String quote2 = new String();//no assigned string object to this reference variable
+        String quote2A = new String(""); //similar
+        
+        String quote3 = new String("WTF!!");
+        System.out.println(quote3);
+        
+        String quote4 = "This is a test";
+        String quote5 = quote4;
+        System.out.println(quote4);
+        System.out.println(quote5);
+        
+        //--------------------------------------------------------------------
+        
+        //String Concatenation
+        System.out.println(1+2);
+        System.out.println("1 " + "2 ");
+        System.out.println(1+2+ " 1 " + "2 ");//output 3 1 2
+        System.out.println("a" + "b" + 1 + 2);//outputab12
+        System.out.println();
+        
+        String s = "1";
+        System.out.println(s);// 1
+        s += 2;
+        System.out.println(s);// 12
+        s += 3;
+        System.out.println(s);// 123
+        
+        //--------------------------------------------------------------------
+        
+        //String class Methods
+        
+        String code = "Hello World";
+        
+        //String length
+        System.out.println(code.length());
+        
+        //charAt
+        System.out.println(code.charAt(3));
+        
+        //indexOf
+        System.out.println(code.charAt(4));
+        
+        //substring
+        System.out.println(code.substring(7));
+        System.out.println(code.substring(7, 9));
+        
+        //toLowerCase & UpperCase
+        System.out.println(code.toLowerCase());
+        System.out.println(code.toUpperCase());
+        
+        //equals & equalsIgnoreCase
+        System.out.println("abc".equals("ABC"));
+        System.out.println("abc".equalsIgnoreCase("ABC"));
+        
+        //startWith & endsWith
+        System.out.println("abc".startsWith("a"));
+        System.out.println("abc".startsWith("b"));
+        
+        System.out.println("abc".endsWith("c"));
+        System.out.println("abc".endsWith("a"));
+        
+        //contains
+        System.out.println("abc".contains("b"));
+        System.out.println("abc".contains("z"));
+        
+        //replace
+        System.out.println("abc".replace('a','Z'));
+        
+        
+        
+    }
+    
+}
