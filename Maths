@@ -1,0 +1,56 @@
+
+package maths;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Maths {
+
+    
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 7;
+        int c = 9;
+        int z = 7;
+        
+        int d = a+b+c;
+        System.out.println(d);
+        
+        int e = c-b;
+        System.out.println(e);
+        
+        int f = a*b;
+        System.out.println(f);
+        
+        int g = z/b;
+        System.out.println(g);
+        
+        // ++x
+        //shorthand way to increment the variable by 1
+        int x = 2;
+        int y = ++x;
+        System.out.println("x=" + x + ", y=" + y); // x=3, y = 3
+        
+        //--x
+        int xx = 4;
+        int yy = --xx;
+        System.out.println("xx=" + xx + ", yy=" + yy);//xx=3, yy=3
+        
+        //h++
+        //Increment variable by 1 after expression has been evaluated
+        int h = 5;
+        int i = h++;
+        System.out.println("h=" + h + ", i=" + i);//h=6, i=5
+        
+        //j--
+        int j = 4;
+        int k = j--;
+        System.out.println("j=" + j + ", k=" + k);//j=3, k=4
+        
+        
+        
+        
+    }
+    
+}
