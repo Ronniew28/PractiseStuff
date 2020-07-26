@@ -1,0 +1,64 @@
+
+package primitivescore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class PrimitivesCORE {
+
+    
+    public static void main(String[] args) {
+        
+        int cash = 77;
+        System.out.println("The cash figure is " + cash);
+            
+        
+        boolean test = false;
+        boolean ans = true;
+        System.out.println(test);
+        System.out.println(ans);
+        
+        char z = '1';
+        char y = 'y';
+        System.out.println(z);
+        System.out.println(y);
+        
+        byte cast = 7; //cast from int to byte
+        byte cast1 = (byte)2; //cast from int to byte
+        System.out.println(cast);
+        System.out.println(cast1);
+        
+        short smallNum = 7777;
+        short rate = (short) 1234;
+        System.out.println(smallNum);
+        System.out.println(rate);
+        
+        byte run1 = 75;
+        int run1a = run1; //cast byte to integer
+        System.out.println(run1);
+        System.out.println(run1a);
+        
+        short run2 = 250;
+        int run2a = run2;
+        System.out.println(run2);//cast short to int
+        System.out.println(run2a);
+        
+        int run3 = (int)123.45F;//cast float to int
+        System.out.println(run3);
+        
+        long bigNum = 48659427;
+        System.out.println(bigNum);
+        
+        float num1 = 87453.975F;
+        System.out.println(num1);
+        
+        double num2 = 4.7D;
+        System.out.println(num2);
+                
+                
+        
+        
+    }
+    
+}
