@@ -1,0 +1,52 @@
+
+package scannerclasscore;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ScannerClassCORE {
+    Scanner myVar = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        //Numeric data input
+        System.out.println("Input a number ");
+        Scanner myVar = new Scanner(System.in);
+        System.out.println("You entered the number: " + myVar.nextLine());
+   
+        Scanner num1 = new Scanner(System.in);
+        System.out.println("Enter first number");
+        int digit1 = myVar.nextInt();
+        Scanner num2 = new Scanner(System.in);
+        //-----------------------------------------------------------------
+        System.out.println("Enter second number");
+        int digit2 = myVar.nextInt();
+        int result = digit1 + digit2;
+        System.out.println("The result is " + result);
+        
+        //String data input
+        Scanner text = new Scanner(System.in);
+        System.out.println("Enter a word ");
+        String word1 = text.nextLine();
+        System.out.println("You entered the word " + word1);
+        //------------------------------------------------------------------
+        System.out.println("Enter a second word ");
+        String word2 = text.nextLine();
+        System.out.println("You entered the word " + word2);
+        String word3 = word1 + " " + word2;
+        System.out.println(word3);
+        //-----------------------------------------------------------------
+        Scanner num3 = new Scanner(System.in);
+        System.out.println("Enter a decimmal number");
+        double dec1 = myVar.nextDouble();
+        System.out.println("The decimal entered is " + dec1);
+        //----------------------------------------------------------------
+        
+        
+        
+        
+    }
+    
+}
