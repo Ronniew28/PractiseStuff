@@ -1,0 +1,119 @@
+
+package inheritance1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Inheritance1 {
+    
+    public class dog1 {
+        int weight;
+        int age;
+        String color;
+        
+        public void eat() {
+            }
+        
+        public void rest() {
+         }
+        
+        public void move(int direction) {
+        }
+        
+        public void bark() {
+            }
+}
+//-------------------------------------------------------------------    
+        public class cat1 {
+                
+        int weight;
+        int age;
+        String color;
+        
+        public void eat() {
+         }
+        
+        public void rest() {
+         }
+        
+        public void move(int direction) {
+        }
+        
+        public void purr() {
+        }
+                
+            }
+//----------------------------------------------------------------------
+    public class horse1 {
+                
+        int weight;
+        int age;
+        String color;
+        
+        public void eat() {
+         }
+        
+        public void rest() {
+            }
+         }
+        
+        public void move(int direction) {
+        }   
+        
+        public void neigh() {
+        }
+        
+//----------------------------------------------------------------------        
+            
+        public class animal {
+        int weight;
+        int age;
+        String color; 
+        
+        public void eat() {
+         }
+        
+        public void rest() {
+         }
+        
+        public void move(int direction) {
+        }
+            }
+//------------------------------------------------------------------------
+        
+        //Each one of the classes below extends or inherits the Animal class
+        //The Animal class is the base or superclass
+        public static class dog2 extends animal {
+            public void bark() {
+                System.out.println("Woof woof");
+            }
+        }
+        
+        public static class cat2 extends animal {
+            public void purr() {
+                System.out.println("Miaow");
+            }
+        }
+        
+        public class horse2 extends animal {
+            public void neigh() {
+                super.rest();
+                System.out.println("whinny");
+            }
+            }
+//-------------------------------------------------------------------------        
+               
+    
+    public static void main(String[] args) {
+        dog2 doggy = new dog2();
+        doggy.bark();
+        doggy.eat();
+        
+        cat2 catty = new cat2();
+        catty.purr();
+        
+        
+    }
+    
+}
