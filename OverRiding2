@@ -1,0 +1,52 @@
+
+package overriding5;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class OverRiding5 {
+    public int add() {
+        return 7;
+        }
+        public int add1() {
+            return 5;
+        }
+        public int mult() {
+            return 3;
+        }
+        public double decimal() {
+            return 2.5;
+        }
+        
+    public static class total extends OverRiding5 {
+        public int add() {
+            return super.add() + 5;
+        }
+}
+    public static class total1 extends OverRiding5 {
+        public int add1() {
+            return super.add1() + 5;
+        }
+    }
+    public static class multiply extends OverRiding5 {
+        public int mult1() {
+            return super.mult() * 5;
+        }
+    }
+    public static class decimal extends OverRiding5 {
+        public double decimal1() {
+            return super.decimal() + 3.7;
+        }
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(new OverRiding5().add());//7
+        System.out.println(new total().add());//12
+        System.out.println(new total1().add1());//10
+        System.out.println(new multiply().mult1());
+        System.out.println(new decimal().decimal1());
+        
+    }
+    
+}
