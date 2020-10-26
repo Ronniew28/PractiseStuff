@@ -1,0 +1,63 @@
+
+package inputandnumbers;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InputAndNumbers {
+
+    
+    public static void main(String[] args) {
+       System.out.println("Enter your name ") ;
+       Scanner name = new Scanner(System.in);
+       System.out.println("Hello " + name.nextLine());
+       
+       Scanner scan = new Scanner(System.in);
+       Scanner num1 = new Scanner(System.in);
+       System.out.println("Enter a number ");
+       int user_input_number1 = scan.nextInt();
+       
+       Scanner num2 = new Scanner(System.in);
+       System.out.println("Enter a second number ");
+       int user_input_number2 = scan.nextInt();
+       
+        int addResult = user_input_number1 + user_input_number2;
+        int minusResult = user_input_number1 - user_input_number2;
+        int multiplyResult = user_input_number1 * user_input_number2;
+        int divResult = user_input_number1 / user_input_number2;
+        
+        System.out.println("The numbers added are " + addResult);
+        System.out.println("The numbers subtracted are " + minusResult);
+        System.out.println("The numbers multipled are " + multiplyResult);
+        System.out.println("The numbers divided are " + divResult);
+        System.out.println();
+        
+        int aa = 5;
+        int bb = 10;
+        int cc = 15;
+        
+        if (addResult > aa) {
+            System.out.println("addResult which is " + addResult + " is greater then the variable aa which is " + aa);
+        }
+        else if (addResult < aa ) {
+            System.out.println("addResult which is " + addResult + " is less then the variable aa which is " + aa);
+        }
+        
+        if (minusResult > bb) {
+            System.out.println("minusResult which is " + minusResult + " is greater then the variable bb which is " + bb);
+        }
+        else if (minusResult < bb) {
+            System.out.println("minusResult which is " + minusResult + " is less then the variable bb which is " + bb);
+        }
+        
+        if (multiplyResult > cc) {
+            System.out.println("multiplyResult which is " + multiplyResult + " is greater then the variable cc which is " + cc);
+        }
+        else if (multiplyResult < cc) {
+            System.out.println("multiplyResult which is " + multiplyResult + " is less then the variable cc which is " + cc);
+        }
+    }
+    
+}
