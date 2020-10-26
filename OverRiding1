@@ -1,0 +1,24 @@
+
+package overriding3;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class OverRiding3 {
+    public int total() {
+        return 77;
+}
+    
+    public static class num1 extends OverRiding3 {
+        public int total() {
+            return super.total() +18;
+        }
+    }
+    
+    public static void main(String[] args) {
+       System.out.println(new OverRiding3().total());//77
+       System.out.println(new num1().total());//95
+    }
+    
+}
