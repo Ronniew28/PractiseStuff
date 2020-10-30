@@ -1,0 +1,38 @@
+
+package string.methods;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringMethods {
+
+    
+    public static void main(String[] args) {
+        String core = "This is a long test sentence";
+        
+        char c1 = core.charAt(11);
+        int i1 = core.indexOf('c');
+        int i2 = core.length();
+        String s = core.concat("YAWN");
+        String s1 = core.replace('s', 'z');
+        boolean b1 = core.startsWith("This");
+        boolean b2 = core.endsWith("no");
+        String s3 = core.trim();
+        String s4 = core.toLowerCase();
+        String s5 = core.toUpperCase();
+        
+        System.out.println(c1);
+        System.out.println(i1);
+        System.out.println(i2);
+        System.out.println(s);
+        System.out.println(s1);
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(s3);
+        System.out.println(s4);
+        System.out.println(s5);
+        
+    }
+    
+}
