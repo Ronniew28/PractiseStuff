@@ -1,0 +1,37 @@
+
+package casting2;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Casting2 {
+
+    
+    public static void main(String[] args) {
+       int score = 7;
+       float score1 = (float)score;
+       System.out.println(score1);//7.0
+       
+       float num = 5;
+       int num1 = (int)num;
+       System.out.println(num1);//5
+       
+       int num2 = 9;
+       int cast1 = new Integer(num2);
+       int cast2 = (Integer)num2;
+       int cast3 = num2;
+       System.out.println(cast1);//9
+       System.out.println(cast2);//9
+       System.out.println(cast3);//9
+       
+       float num3 = 5.78f;
+       System.out.println(num3);
+       System.out.println();
+        
+       
+       
+              
+    }
+    
+}
