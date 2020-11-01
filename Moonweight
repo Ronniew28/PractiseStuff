@@ -1,0 +1,22 @@
+
+package moonweight;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MoonWeight {
+
+    
+    public static void main(String[] args) {
+        int weight;
+        int moonWeight;
+        
+        weight = 75;
+        moonWeight = (int) (weight * 0.165);
+        System.out.println("The moonweight is " + moonWeight);
+        
+        
+    }
+    
+}
