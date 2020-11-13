@@ -1,0 +1,25 @@
+
+package returndemo;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ReturnDemo {
+    //in a void method you can cause the immediate termination of a method by using thos form of *return*
+    void myMeth() {
+        int i;
+        
+            for(i=0; i<10; i++) {
+                if(i==5) return; //stops at 5
+                        System.out.println(i);
+            }
+    }
+    
+    public static void main(String[] args) {
+        ReturnDemo test = new ReturnDemo();
+        test.myMeth();
+
+    }
+    
+}
