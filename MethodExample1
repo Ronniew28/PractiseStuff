@@ -1,0 +1,36 @@
+
+package vehicle3;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Vehicle3 {
+    int passengers;
+    int fuelcap;
+    int mpg;
+    
+    //Return the range using this method
+    int range() {
+        return mpg * fuelcap;
+        //method can be used eleswhere in the code
+}
+            
+    
+    public static void main(String[] args) {
+        Vehicle3 car = new Vehicle3();
+        
+        int range1; //must match the return type in the method
+        
+        car.passengers = 2;
+        car.fuelcap = 16;
+        car.mpg = 21;
+        
+        range1 = car.range();//get the range the car can travel
+        //assigns the value returned to a variable
+        
+        System.out.println("The car can travel " + range1 + " miles");
+        
+    }
+    
+}
