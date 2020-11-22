@@ -1,0 +1,24 @@
+
+package arrayoutput;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayOutput {
+
+    
+    public static void main(String[] args) {
+        int[]nums = {1, 2, 3, 4, 5};
+        for(int i = 0; i < nums.length; i++)
+            System.out.println(nums[i] + " ");// output array contents
+        
+        int[][]test = {{1, 2, 3} , {4, 5, 6}};
+        for (int[] test1 : test) {
+            System.out.println(Arrays.toString(test1) + " "); //output array contents
+        }
+    }
+    
+}
