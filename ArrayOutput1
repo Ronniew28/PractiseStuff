@@ -1,0 +1,27 @@
+
+package arrayoutput1;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayOutput1 {
+
+    
+    public static void main(String[] args) {
+        int nums[][] = {
+        {1},
+        {4},
+        {9},
+        {16},
+        {25}
+    };
+        
+        for (int[] num : nums) {
+            System.out.println(Arrays.toString(num) + " "); // output array contents
+        }
+    }
+    
+}
