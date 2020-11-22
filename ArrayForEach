@@ -1,0 +1,54 @@
+
+package arrayforeach;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayForEach {
+
+    
+    public static void main(String[] args) {
+        int[] run1 = {1, 2, 3, 4, 5};
+        int sum = 0;
+        
+        for(int x = 0; x < run1.length; x++) {
+            sum+=run1[x];
+        }
+        System.out.println(sum); // output 15
+//---------------------------------------------------------------------------        
+        int[] run2 = {2, 4, 6, 8, 10};
+        for(int z: run2) {
+        System.out.println(z); //output array contents
+        }
+//---------------------------------------------------------------------------        
+        int[] run3 = {10, 20, 30, 40, 50};
+        int sum1 = 0;
+        
+        for(int y: run3) {
+             System.out.println(y); //output array contents
+        }
+//---------------------------------------------------------------------------- 
+        int[] run4 = {5, 10, 15, 20, 25};
+        int sum2 = 0;
+        
+        for(int w: run4){
+             System.out.println("The number is " + w);
+        }
+//-----------------------------------------------------------------------------
+        //Using a break statement to terminate the loop early
+        int[] run5 = {90, 91, 92, 93, 94, 95};
+        int sum3 = 0;
+        
+        for(int v: run5) {
+             System.out.println("The number is " + v);   
+             sum += v;
+                if(v == 93) break;
+                }
+            System.out.println("Loop terminated early as per code");
+//-----------------------------------------------------------------------------
+
+
+    }
+    
+}
