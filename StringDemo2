@@ -1,0 +1,63 @@
+
+package stringdemo1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringDemo1 {
+
+    
+    public static void main(String[] args) {
+        String str = new String("Hello");
+        
+        String str2 = new String(str);
+        
+        System.out.println(str);
+        System.out.println(str2);
+        
+        String str3 = ("Hello World");
+        System.out.println(str3);
+        
+        //String length
+        System.out.println("The length of str is " + str.length());
+        System.out.println("The length of str2 is " + str2.length());
+        System.out.println("The length of str3 is " + str3.length());
+        
+        if(str.equals(str2))
+            System.out.println("str = str2");
+        else 
+            System.out.println("str != str2");
+        
+        if(str2.equals(str3))
+            System.out.println("str2 = str3");
+        else 
+            System.out.println("str2 != str3");
+        
+        //Char at
+        System.out.println(str3.charAt(7)); //output o
+        
+        //indexOf
+        System.out.println(str.indexOf('l')); //output 2
+        
+        //toLowerCase
+        System.out.println(str3.toLowerCase());
+        
+        //toUpperCase
+        System.out.println(str3.toUpperCase());
+        
+        //startsWith & endsWith
+        System.out.println("abc".startsWith(str3)); //output false
+        System.out.println("Hello World".startsWith(str3));//true
+        System.out.println("abc".endsWith(str3));//false
+        System.out.println("Hello World".endsWith(str3));//true
+        
+        //contains
+        System.out.println((str3).contains("Hel")); //true
+        System.out.println((str3).contains("z")); //output false
+        
+        //replace
+        System.out.println((str3).replace('e', 'q'));
+    }
+    
+}
