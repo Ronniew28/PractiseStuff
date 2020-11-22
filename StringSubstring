@@ -1,0 +1,19 @@
+
+package stringsubstring;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringSubstring {
+
+    
+    public static void main(String[] args) {
+        String str = "This is an example of a string";
+        System.out.println(str);
+        
+        String subString = str.substring(5);
+        System.out.println(subString);
+    }
+    
+}
