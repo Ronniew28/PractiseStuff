@@ -1,0 +1,37 @@
+
+package forlooprevision1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ForLoopRevision1 {
+
+    
+    public static void main(String[] args) {
+        //For each
+        int num[] = {1, 2, 3, 4, 5};
+        int sum = 0;
+        
+        for(int x: num) {
+            System.out.println("Number is " + x);
+            sum += x;
+        }
+        
+        int num1[] = {6, 7, 8, 9, 10};
+        for(int y: num1) {
+            System.out.println("Number is " + y);
+            sum += y;
+        }
+        
+        int break1[] = {11, 12, 13, 14, 15};
+        for (int z: break1) {
+            System.out.println("Number is " + z );
+            sum += z;
+            if (z == 13) break;
+            }
+        System.out.println("Loop terminated early");
+        
+            }
+    
+}
