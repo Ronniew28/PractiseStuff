@@ -1,0 +1,31 @@
+
+package accessdemo1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class AccessDemo1 {
+
+        private String word1;
+        public String word2;
+        
+        void setWord1(String w1) {
+            word1 = "Hello";
+        }
+        
+        String getWord1() {
+            return word1;
+        }
+                
+        public static void main(String[] args) {
+        AccessDemo1 ob = new AccessDemo1();
+        ob.setWord1("Hello");
+        System.out.println("setWord1 is " + ob.getWord1());
+        
+        ob.word1 = "hi";
+        System.out.println("setWord1 is " + ob.getWord1());        
+
+            }
+    
+}
