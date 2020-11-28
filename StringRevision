@@ -1,0 +1,26 @@
+
+package stringrevision;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringRevision {
+
+    
+    public static void main(String[] args) {
+        String word1 = "Hello";
+        String word2 = "Code";
+        String word3 = "World";
+        
+        System.out.println(word1);
+        System.out.println(word2);
+        System.out.println(word3);
+        
+        String words = word1 + word2 + word3;
+        String words1 = word1 + " " + word2 + " " + word3;
+        System.out.println(words);
+        System.out.println(words1);
+    }
+    
+}
