@@ -1,0 +1,35 @@
+
+package methodrevision1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodRevision1 {
+    
+    public static void method1() {
+    System.out.println("Method one");
+}
+    public static void method2(String object) {
+    System.out.println("The item passed in is " + object);
+    }
+    
+    public static void method3(int x) {
+    System.out.println("The value of X is " + x);
+    }
+    
+    public static int method4(int y, int z) {
+    return y+z;
+    }
+
+    
+    public static void main(String[] args) {
+       method1();
+       method2("an object");
+       method3(7);
+       
+       int ans = method4(5,5);
+       System.out.println("The method 4 total is " + ans);
+    }
+    
+}
