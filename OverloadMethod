@@ -1,0 +1,45 @@
+
+package overloadmethod;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class OverloadMethod {
+
+        void ov1Demo() {
+        System.out.println("Empty of parameters");
+        }
+        
+        void ov1Demo(int x) {
+        System.out.println("One parameter (int x) : " + x);
+        }
+        
+        int ov1Demo(int a, int b) {
+        System.out.println("Two parameters (int a & int b) : " + a + " " + b);
+        return a+b;        
+        }
+        
+        byte ov1Demo(byte by) {
+        System.out.println("The sample byte is byte b: " + by);
+        return by;
+        }
+    
+    public static void main(String[] args) {
+        OverloadMethod ob = new OverloadMethod();
+        int parametersTotal;
+        
+        ob.ov1Demo();
+        System.out.println();
+        
+        ob.ov1Demo(2);
+        System.out.println();
+        
+        parametersTotal = ob.ov1Demo(7,8);
+        System.out.println("Result of two parameters " + parametersTotal);
+        
+        ob.ov1Demo(99);
+        System.out.println();
+    }
+    
+}
