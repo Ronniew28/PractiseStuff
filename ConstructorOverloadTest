@@ -1,0 +1,22 @@
+
+package constructoroverloadtest;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ConstructorOverloadTest {
+
+        int x;
+        
+        ConstructorOverloadTest() {
+            System.out.println("Inside ConstructorOverloadTest(). ");
+            x=0;           
+        }
+    
+    public static void main(String[] args) {
+        ConstructorOverloadTest t1 = new ConstructorOverloadTest();
+        System.out.println("t1.x is " + t1.x);
+    }
+    
+}
