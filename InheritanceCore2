@@ -1,0 +1,72 @@
+
+package inheritancecore1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InheritanceCore1 {
+
+        int a;
+        
+        public void addition(int x, int y) {
+            a=x+y;
+            System.out.println("The addition total is: " + a);
+        }
+        
+        public void minus(int x, int y) {
+            a=x-y;
+            System.out.println("The minus total is " + a);
+        }
+        
+        public void divide(int x, int y) {
+            a=x/y;
+            System.out.println("The division total is " + a);
+        }
+        
+        public static class addition extends InheritanceCore1 {
+                public void add(int x,int y) {
+                    a=x+y;
+                    System.out.println("The addition answer is: " + a);
+                }
+        }
+        
+        public static class minus extends InheritanceCore1 {
+                public void subtraction(int x,int y) {
+                    a=x-y;
+                    System.out.println("The subtraction answer is: " + a);
+                }
+        }
+        
+        public static class multiply extends InheritanceCore1 {
+                public void multiplication(int x,int y) {
+                    a=x*y;
+                    System.out.println("The multiply answer is: " + a);
+                }
+            }
+        
+         public static class divide extends InheritanceCore1 {
+                public void division(int x,int y) {
+                    a=x/y;
+                    System.out.println("The division answer is: " + a);
+                }
+            }
+    
+    public static void main(String[] args) {
+       int b = 7;
+       int c = 5;
+       multiply demo = new multiply();
+       demo.multiplication(b, c);
+        
+        minus demo1 = new minus();
+        demo1.subtraction(b, c);
+        
+        divide demo2 = new divide();
+        demo2.division(b, c);
+        
+        addition demo3 = new addition();
+        demo3.add(b, c);
+        
+    }
+    
+}
