@@ -1,0 +1,37 @@
+package methodoverloadingrev;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodOverloadingREV {
+    
+    void ovDemo1() {
+        System.out.println("No Parameters");
+    }
+    
+    void ovDemo1(int a) {
+        System.out.println("One parameter " + a);
+    }
+    
+    int ovDemo1(int a, int b) {
+        System.out.println("Two parameters " + a + " " + b);
+        return a+b;
+    }
+    
+    double ovDemo1(double c, double d) {
+        System.out.println("two doubles are " + c + " " + d);
+        return c+d;
+    }
+
+    
+    public static void main(String[] args) {
+        MethodOverloadingREV ob = new MethodOverloadingREV();
+        
+        ob.ovDemo1();
+        ob.ovDemo1(7);
+        ob.ovDemo1(4, 8);
+        ob.ovDemo1(2.7, 4.8);
+    }
+    
+}
