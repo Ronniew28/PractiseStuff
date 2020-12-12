@@ -1,0 +1,53 @@
+
+package inheritancerev;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InheritanceREV {
+    
+    int num;
+    
+        public void addition (int x, int y) {
+            num = x+y;
+            System.out.println("The total is " + num);
+        }
+        
+            public static class minus extends InheritanceREV {
+                public void subtraction(int x, int y) {
+                    num = x-y;
+                    System.out.println("The minus total is " + num);
+                }
+            }
+            
+                public static class multiply extends InheritanceREV {
+                    public void multiplication(int x, int y) {
+                        num = x*y;
+                        System.out.println("The multiplication total is " + num);
+                    }
+                }
+                
+                    public static class divide extends InheritanceREV {
+                        public void division(int x, int y) {
+                            num = x/y;
+                            System.out.println("The division total is " + num);
+                        }
+                    }
+
+    
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 5;
+        
+        minus demo = new minus();
+        multiply demo1 = new multiply();
+        divide demo2 = new divide();
+        
+        demo.addition(a, b); //output 10
+        demo.subtraction(a, b); //output 0
+        demo1.multiplication(a, b); //output 25
+        demo2.division(a, b); //output 1
+    }
+    
+}
