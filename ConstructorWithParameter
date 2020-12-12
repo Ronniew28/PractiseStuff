@@ -1,0 +1,22 @@
+
+package constructorrev1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ConstructorREV1 {
+    //Constructor with parameter
+    int x;
+    
+    public ConstructorREV1(int x) { //NB: int x is a parameter of the constructor
+           this.x = x;  
+    }
+
+    public static void main(String[] args) {
+            ConstructorREV1 one = new ConstructorREV1(7);
+            System.out.println("The value is " + one.x);
+        
+    }
+    
+}
