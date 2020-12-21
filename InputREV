@@ -1,0 +1,33 @@
+
+package inputrev;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InputREV {
+
+    
+    public static void main(String[] args) {
+     System.out.println("Numbers input");
+     Scanner myVar = new Scanner(System.in);
+     System.out.println("Enter a number ");
+     int x = myVar.nextInt();
+     System.out.println("You entered the number " + x);
+     System.out.println();
+     
+     Scanner myVar1 = new Scanner(System.in);
+     System.out.println("Enter a second number ");
+     int y = myVar1.nextInt();
+     System.out.println("The second number you entered is  " + y);
+     System.out.println();
+     
+     System.out.println("Text Input");
+     System.out.print("Enter a word: ");
+     Scanner word = new Scanner(System.in); 
+     System.out.println("You entered: " + word.nextLine());
+     
+    }
+    
+}
