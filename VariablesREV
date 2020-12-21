@@ -1,0 +1,60 @@
+
+package variablerev;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class VariableREV {
+    
+    static String HelloWorld; // used for Variables in a class section
+    static int total;// used for Variables in a class section
+    
+    static void varInMethod (String name){
+    System.out.println("This is a variable example in a method " + name);
+}
+    
+    public static void main(String[] args) {
+        int num;
+        num = 7;
+        
+        String word = "Hello";
+        String word1;
+        word1 = "World";
+        
+        int num1 = 5;
+        int num2;
+        num2 = 5;
+        int sum = num1 + num2;
+        
+        //Variables in a code block
+        int a, b, c;
+        
+        a = 2;
+        b = 4;
+        c = 7;
+        
+            //Sample Code Block
+            if (b == 4) {
+                System.out.println("Int b = 4");
+            }
+            if (a != 3) {
+                System.out.println("Int a != 3");
+            }
+            if (a + b < c) {
+                System.out.println("a + b < c");
+            }
+            
+        //Variables in a class
+        HelloWorld = "Hello World";
+        System.out.println(HelloWorld);
+        
+        total = 77;
+        System.out.println(total);
+        
+        //Variables in a method
+        varInMethod("Tom");
+        
+    }
+    
+}
