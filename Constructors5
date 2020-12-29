@@ -1,0 +1,39 @@
+
+package constructors4;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Constructors4 {
+    int x;
+    int y;
+    int z;
+    int k;
+    int add;
+    int multiply;
+    
+        Constructors4() { //this is the constructor for Constructors4
+            x = 7;
+            y = 8;
+        }
+        
+        Constructors4(int add) { //constructor with a parameter
+            z = add;
+            k = multiply;
+        }
+        
+                            
+    public static void main(String[] args) {
+        Constructors4 t1 = new Constructors4();
+        Constructors4 t2 = new Constructors4();
+        Constructors4 parameter = new Constructors4(77);
+        Constructors4 multiply = new Constructors4();
+        System.out.println(t1.x);
+        System.out.println(t2.y);
+        System.out.println(parameter.z);
+        System.out.println(multiply.k);
+        
+    }
+    
+}
