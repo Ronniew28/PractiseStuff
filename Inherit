@@ -1,0 +1,52 @@
+
+package inherit;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Inherit {
+    
+    int a;
+    
+        public void addition(int x, int y) {
+           a = x+y;
+           System.out.println("The total is: " + a);
+        }
+        
+        public static class minus extends Inherit {
+            public void subtract (int x, int y) {
+                a = x-y;
+                System.out.println("The minus answer is: " + a);
+            }
+        }
+        
+        public static class multiply extends Inherit {
+            public void mult (int x, int y)     {
+                a = x*y;
+                System.out.println("The multiply answer is: " + a);
+            }
+        }
+        
+        public static class division extends Inherit {
+            public void divide (int x, int y) {
+                a = x/y;
+                System.out.println("The division answer is: " + a);
+            }
+        }
+    
+    public static void main(String[] args) {
+        int num1 = 7;
+        int num2 = 5;
+        
+        minus demo = new minus();
+        multiply demo1 = new multiply();
+        division demo2 = new division();
+        demo.addition(num1, num2);//12
+        demo.subtract(num1, num2);//2
+        demo1.mult(num1, num2);//35
+        demo2.divide(num1, num2);//1
+        
+            }
+    
+}
