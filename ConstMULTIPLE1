@@ -1,0 +1,38 @@
+
+package constmultiple1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ConstMULTIPLE1 {
+    
+    int x;
+    int y;
+    
+    ConstMULTIPLE1(int i) {
+        x = i;
+        y = i;
+         }
+    
+    
+    public static void main(String[] args) {
+        ConstMULTIPLE1 add = new ConstMULTIPLE1(7);
+        ConstMULTIPLE1 add1 = new ConstMULTIPLE1(5);
+        ConstMULTIPLE1 num1 = new ConstMULTIPLE1(9);
+        ConstMULTIPLE1 num2 = new ConstMULTIPLE1(11);
+        
+        System.out.println(add.x + add1.x);//12
+        System.out.println(add.x - add1.x);//2
+        System.out.println(add.x * add1.x);//35
+        System.out.println(add.x / add1.x);//1
+        
+        System.out.println();
+        
+        System.out.println(num1.y + num2.y);//20
+        System.out.println(num1.y - num2.y);//-2
+        System.out.println(num1.y * num2.y);//99
+        System.out.println(num1.y / num2.y);//0
+    }
+    
+}
