@@ -1,0 +1,33 @@
+
+package inherit1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Inherit1 {
+    
+    int z;
+    
+        public void division(int a, int b) {
+            z = a/b;
+            System.out.println("The division answer is: " + z);
+        }
+        
+        public static class multiplication extends Inherit1 {
+            public void multiply (int a, int b) {
+                z = a*b;
+                System.out.println("The multiplication answer is " + z);
+            }
+               }
+    
+   public static void main(String[] args) {
+        int num1 = 14;
+        int num2 = 7;
+        
+        multiplication demo = new multiplication();
+        demo.multiply(num1, num2);//98
+        demo.division(num1, num2);//2
+    }
+    
+}
