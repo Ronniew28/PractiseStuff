@@ -1,0 +1,26 @@
+
+package overridingcore;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class OverRidingCORE {
+   
+    public void planeType() {
+        System.out.println("Airbus");
+    }
+    
+    public static class newPlane extends OverRidingCORE {
+        public void planeType() {
+            System.out.println("Boeing");
+        }
+    }
+    
+    public static void main(String[] args) {
+        OverRidingCORE test = new newPlane();
+        test.planeType();
+        
+    
+}
+}
