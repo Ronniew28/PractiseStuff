@@ -1,0 +1,37 @@
+
+package conoverload;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ConOverload {
+    
+    int x;
+    
+    ConOverload() {
+        System.out.println("Inside ConOverload()");
+        x = 5;
+    }
+    
+    ConOverload(int i) {
+        System.out.println("Inside ConOverload(int)");
+        x = i;
+    }
+    
+    ConOverload(double d) {
+        System.out.println("Inside ConOverload(double)");
+        x = (int) d;
+    }
+    
+    public static void main(String[] args) {
+        ConOverload r1 = new ConOverload();
+        ConOverload r2 = new ConOverload(77);
+        ConOverload r3 = new ConOverload(2.7);
+        
+        System.out.println("r1 is " + r1.x);
+        System.out.println("r2 is " + r2.x);
+        System.out.println("r3 is " + r3.x);
+    } 
+    
+}
