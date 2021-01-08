@@ -1,0 +1,24 @@
+
+package methodrev1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class MethodREV1 {
+    int passengers;
+    int cars;
+    
+    public static void main(String[] args) {
+        MethodREV1 skulls = new MethodREV1();
+        MethodREV1 rides = new MethodREV1();
+        
+        //Assign values to fields in skulls
+        skulls.passengers = 7;
+        rides.cars = 7;
+        
+        System.out.println("The number of passengers is " + skulls.passengers);
+        System.out.println("The number of cars is " + rides.cars);
+    }
+    
+}
