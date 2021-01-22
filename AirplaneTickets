@@ -1,0 +1,122 @@
+
+package airline2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Airline2 {
+
+    
+    public static void main(String[] args) {
+        //Intro code
+        System.out.println("Crap Airlines Inc");
+        System.out.println();
+        System.out.println("Hello & Welcome! ");
+        System.out.println("=====================");
+        System.out.println();
+        System.out.println("Please select your Departure Airport");
+        System.out.println();
+        System.out.println("Dublin. Press 1");
+        System.out.println("Cork. Press 2");
+        System.out.println("Donegal. Press 3");
+        System.out.println("=====================");
+        System.out.println();
+        
+        //Set departure variables
+        int dublin = 1;
+        int cork = 2;
+        int donegal = 3;
+        
+        //Input departures choice
+        Scanner myVar = new Scanner(System.in);
+        System.out.println("Enter your Departure Airport ");
+        int x = myVar.nextInt();
+        switch (x) {
+            case 1:
+                System.out.println("Your Departure Airport is Dublin");
+                break;
+            case 2:
+                System.out.println("Your Departure Airport is Cork");
+                break;
+            case 3:
+                System.out.println("Your Departure Airport is Donegal");
+                break;
+            default:
+                break;
+        }
+        System.out.println("=====================");
+        
+        System.out.println("Please select your Arrivals Airport");
+        System.out.println();
+        System.out.println("London. Press 4");
+        System.out.println("Paris. Press 5");
+        System.out.println("Rome. Press 6");
+        System.out.println("=====================");
+        
+        //Set arrivals variables
+        int london = 4;
+        int paris = 5; 
+        int rome = 6;
+        
+        //Input arrivals choice
+        Scanner myVar1 = new Scanner(System.in);
+        System.out.println("Enter your Arrivals Airport ");
+        int y = myVar1.nextInt();
+        switch (y) {
+            case 4:
+                System.out.println("Your Arrival Airport is London");
+                break;
+            case 5:
+                System.out.println("Your Arrival Airport is Paris");
+                break;
+            case 6:
+                System.out.println("Your Arrival Airport is Rome");
+                break;
+            default:
+                break;
+        }
+        System.out.println("=======================");
+        
+        char cargo = 'c';
+        char econ = 'e';
+        char Bus = 'b';
+        
+        //Ticket options
+        System.out.println("Please select from the following Ticket Options");
+        System.out.println();
+        System.out.println("Cargo class, Press C");
+        System.out.println("Economy Class, Press E");
+        System.out.println("Business Class, Press B");
+        System.out.println();
+        
+        Scanner opt = new Scanner(System.in);
+        System.out.println("Enter your Ticket Choice now");
+        char code = opt.next().charAt(0);
+            switch (code) {
+                case 'c':
+                    System.out.println("Cargo Class selected");
+                    break;
+                case 'e':
+                    System.out.println("Economy Class selected");
+                    break;
+                case 'b':
+                    System.out.println("Business Class selected");
+                    break;
+                default:
+                    break;
+            }
+        System.out.println("=================================");
+        
+        //Booking Summary
+        System.out.println("Booking Summary");
+        System.out.println();
+        System.out.println("Departure: " + x);
+        System.out.println("Destination: " + y);
+        System.out.println("Ticket Type: " + code);
+        
+    }
+    
+}
