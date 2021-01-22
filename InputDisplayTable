@@ -1,0 +1,25 @@
+
+package inputdisplay.table;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class InputDisplayTable {
+
+    
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter a Number : ");
+     int num = sc.nextInt();
+     System.out.println(num);
+     
+     for (int i = 0; i <= 5; i++) {
+         System.out.println(num * i);
+     }
+        
+    
+    }
+}
