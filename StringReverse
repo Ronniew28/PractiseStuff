@@ -1,0 +1,18 @@
+
+package stringreverse;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringReverse {
+
+    
+    public static void main(String[] args) {
+        StringBuilder hello = new StringBuilder("Hello World");
+        hello.reverse();
+        System.out.println(hello);
+        
+    }
+    
+}
