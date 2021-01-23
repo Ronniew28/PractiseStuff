@@ -1,0 +1,25 @@
+
+package textcount;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class TextCount {
+
+    
+    public static void main(String[] args) {
+        String test = "This is a big example";
+        
+        System.out.println("The string length is " + test.length());
+        
+        int count = 1;
+        for(int i = 0; i<test.length(); ++i) {
+            if(test.charAt(i) == ' ')
+                count++;
+        }
+        System.out.println("Number of spaces " + (count - 1));
+        
+    }
+    
+}
