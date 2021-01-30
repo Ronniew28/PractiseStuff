@@ -1,0 +1,24 @@
+
+package stringtointeger;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringToInteger {
+
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter a number in string format: ");
+        String number = in.nextLine();
+        System.out.println("You entered the number " + number);
+        
+        //convert string number to integer
+        int numConverted = Integer.parseInt(number);
+        System.out.println("Converted from string to integer the number is : " + numConverted);
+    }
+    
+}
