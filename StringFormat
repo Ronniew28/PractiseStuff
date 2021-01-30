@@ -1,0 +1,24 @@
+
+package stringformat;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringFormat {
+
+    
+    public static void main(String[] args) {
+       String test= "Hello world this is a very long sentence that I'm going to split";
+       String[] split = test.split("\\s+");
+       System.out.println(Arrays.toString(split));
+       System.out.println();
+       
+       String test1= "Hello world \n\tthis is a very \n\t\tlong sentence that I'm \n\t\t\tgoing to split";
+       System.out.println(test1);
+       
+    }
+    
+}
