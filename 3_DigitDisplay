@@ -1,0 +1,36 @@
+
+package pkg3digitinteger;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Main {
+
+    
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter your First Number : ");
+     int firstNum = sc.nextInt();
+     
+     //convert to String to get the number of digits of the variable
+     int length = String.valueOf(firstNum).length();
+     System.out.println("The number of digits of the int *length* entered is: " + length);
+     
+     //limiting the display to that of 3 digits only
+    boolean test;
+    
+        if (length == 3) {
+        test = true;
+        System.out.println("The variable *length* " + length + " " + "has 3 digits");
+    }
+        else if (length != 3) {
+            test = false;
+            System.out.println("The variable *length* " +  " " + "does not have 3 digits");
+        }
+    
+    }
+    
+}
