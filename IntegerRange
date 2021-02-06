@@ -1,0 +1,40 @@
+
+package integerrange;
+
+import java.time.temporal.ValueRange;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class IntegerRange {
+
+    
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter your First Number : ");
+     int firstNum = sc.nextInt();
+     System.out.println("Enter your Second Number : ");
+     int secondNum = sc.nextInt();
+     
+     //range of the 2 input integers specified
+     ValueRange range = ValueRange.of(firstNum, secondNum);
+     System.out.println(range);
+     System.out.println();
+          
+        
+//-------------------------------------------------------------------------
+        
+    do {
+                System.out.println("Integer remainder of the number in the range is " + firstNum + " divided by 2 is " + firstNum % 2);
+                firstNum++;
+                    }
+            while (firstNum <= secondNum);
+    System.out.println();
+
+  
+    }     
+          
+    }
+    
