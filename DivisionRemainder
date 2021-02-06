@@ -1,0 +1,25 @@
+
+package runout1;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class Runout1 {
+
+    
+    public static void main(String[] args) {
+        int x = 1;
+        int y = 5;
+            do {
+                System.out.println("Integer remainder of " + x + " divided by 2 is " + x % 2);
+                System.out.println("Integer remainder of " + y + " divided by 5 is " + y % 5);
+                x++;
+                y++;
+    }
+            while (x <= 10 && y <= 30);
+                }
+    
+}        
+    
+    
