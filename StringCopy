@@ -1,0 +1,38 @@
+
+package stringcopy;
+
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringCopy {
+
+    
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        String sCopy1 = s1;
+        String sCopy2 = sCopy1;
+        String sCopy3 = sCopy2;
+        
+        //print original string
+        System.out.println(s1);
+        
+        //print copies of the string
+        System.out.println(sCopy1);
+        System.out.println(sCopy2);
+        System.out.println(sCopy3);   
+        
+        //print last 4 characters of the string
+        String last4 = s1.substring(s1.length() - 4);
+        System.out.println(last4);
+        
+        String last5 = sCopy1.substring(sCopy1.length() - 4);
+        String last6 = sCopy2.substring(sCopy1.length() - 4);
+        String last7 = sCopy3.substring(sCopy1.length() - 4);
+        System.out.println(last5);
+        System.out.println(last6);
+        System.out.println(last7);
+    }
+    
+}
