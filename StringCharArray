@@ -1,0 +1,21 @@
+
+package stringchararray;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringCharArray {
+
+    
+    public static void main(String[] args) {
+        char [] ch  = {'H', 'e', 'l', 'l', 'o'};
+        String greet = new String(ch);
+        System.out.println(greet);
+        
+        //alternate method
+        String greet1 = String.valueOf(ch);
+        System.out.println(greet1);
+    }
+    
+}
