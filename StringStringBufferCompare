@@ -1,0 +1,21 @@
+
+package stringstringbuffercompare;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringStringBufferCompare {
+
+    
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Hello");
+        String s1 = "Hello";
+        System.out.println(s1.contentEquals(sb)); //true
+        
+        StringBuffer sb1 = new StringBuffer("abcde");
+        String s2 = "ABCDE";
+        System.out.println(s2.contentEquals(sb1)); //false
+    }
+    
+}
