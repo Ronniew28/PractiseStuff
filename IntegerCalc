@@ -1,0 +1,40 @@
+
+package integercalc2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class IntegerCalc2 {
+
+    
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter a number between 25 & 75: ");
+     int a = sc.nextInt();
+        if(a < 25 | a > 75) {
+            System.out.println("Invalid parameter. Program terminated");
+            System.exit(0);
+        }
+     
+     System.out.println("Enter a number between 25 & 75: ");
+     int b = sc.nextInt();
+        if(b < 25 | b > 75) {
+            System.out.println("Invalid parameter, Program terminated ");
+            System.exit(0);
+        }
+        
+        String s1 = Integer.toString(a);
+        String s2 = Integer.toString(b);
+            for (int i = 0; i < s1.length(); i++)
+                for (int j = 0; j < s2.length(); j++)
+                    if (s1.charAt(i) == s2.charAt(j))
+                        System.out.println("Common Digits");
+                    else if (s1.charAt(i) != s2.charAt(j)) {
+                        System.out.println("No matching digits");
+                    }
+    }
+    
+}
