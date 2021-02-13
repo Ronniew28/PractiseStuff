@@ -1,0 +1,36 @@
+
+package date.time;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.*;
+import java. text.SimpleDateFormat;
+import java.text.ParseException;
+import java.util.Date;
+import java.util.Locale;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class DateTime {
+
+    
+    public static void main(String[] args) {
+        System.out.println(LocalDate.now());
+        System.out.println(LocalTime.now());
+        System.out.println(LocalDateTime.now());
+        System.out.println("Current date and time is: " + (LocalDateTime.now()));
+        
+        LocalDate ld1 = LocalDate.of(2021, Month.MARCH, 23);
+        System.out.println(ld1);
+        
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM yyyy");
+        String strDate = formatter.format(date);
+        System.out.println(strDate);
+        
+        
+    }
+    
+}
