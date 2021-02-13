@@ -1,0 +1,67 @@
+
+package arraybigsmallints;
+import java.util.Arrays;
+import java.util.Collections;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayBigSmallInts {
+
+    
+    public static void main(String[] args) {
+        int temp;
+        int size;
+                
+        int [] numbers = {27, 3, 45, 84, 76};
+        size = numbers.length;
+        System.out.println(Arrays.toString(numbers));
+        
+        //sort smallest to biggest
+        //find smallest number
+        Arrays.sort(numbers);
+        for (int i = 0; i <numbers.length; i++) 
+        System.out.print(numbers[i] + " "); 
+        
+        for(int i = 0; i < size; i++) {
+            for( int j = i+1; j < size; j++) {
+                if(numbers[i] > numbers[j]) {
+                    temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;        
+                }
+            }
+        }
+        
+     System.out.println("Smallest number is " + numbers[0]) ;
+     
+     //--------------------------------------------------------------------
+        
+     //find largest number
+     Arrays.sort(numbers);
+        for (int i = 0; i <numbers.length; i++) 
+        System.out.print(numbers[i] + " "); 
+        
+        for(int i = 0; i < size; i++) {
+            for( int j = i+1; j < size; j++) {
+                if(numbers[i] < numbers[j]) {
+                    temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;        
+                }
+            }
+        }
+        
+     System.out.println("Largest number is " + numbers[0]) ;
+     
+     //----------------------------------------------------------------------
+     
+     //sort array descending
+     Integer [] arr = {74,93,2,23,87};
+     Arrays.sort(arr, Collections.reverseOrder());
+     System.out.println( Arrays.toString(arr));
+        
+    }
+    
+}
