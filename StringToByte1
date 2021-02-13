@@ -1,0 +1,25 @@
+
+package stringtobyte;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringToByte {
+    
+    public static byte convertStringToByte(String str) {
+        return Byte.parseByte(str);
+    }
+
+    
+    public static void main(String[] args) {
+       String value = "77";
+       byte byteValue;
+       
+       byteValue = convertStringToByte(value);
+       
+       System.out.println("Byte value after conversion from string is " +byteValue);
+       
+    }
+    
+}
