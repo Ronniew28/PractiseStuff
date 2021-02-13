@@ -1,0 +1,77 @@
+
+package stringendschars;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class StringEndsChars {
+
+    
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        String s2 = "Hello World";
+        String s3 = "Control String";
+        String last3digits = " ";
+        String last3digitsS2 = " ";
+        String last3digitsS3 = " ";
+        
+        // check the last 3 letters of string s1       
+            if (s1.length()>3) {
+              last3digits = s1.substring(s1.length() - 3);
+            }
+            else
+            {
+                last3digits = s1;
+            }
+        System.out.println(last3digits); //rld
+        
+        //check the last 3 letters of string s2
+            if (s2.length()>3) {
+              last3digitsS2 = s2.substring(s2.length() - 3);
+            }
+            else
+            {
+                last3digitsS2 = s2;
+            }
+        System.out.println(last3digitsS2);
+        
+        //check the last 3 digits of string s3
+            if (s3.length()>3) {
+              last3digitsS3 = s3.substring(s3.length() - 3);
+            }
+            else
+            {
+                last3digitsS3 = s3;
+            }
+        System.out.println(last3digitsS3);
+        
+        //compare the 3 strings together
+        if (last3digits.equals(last3digitsS2)) {
+            System.out.println("s1 & s2 last 3 characters match");
+        }
+        else {
+            System.out.println("No character match found");
+        }
+        
+        if (last3digits.equals(last3digitsS3)) {
+            System.out.println("s1 & s3 last 3 characters match");
+        }
+        else {
+            System.out.println("No character match found");
+        }
+       
+        if (last3digitsS2.equals(last3digitsS3)) {
+            System.out.println("s2 & s3 last 3 characters match");
+        }
+        else {
+            System.out.println("No character match found");
+        }
+        }
+    
+    
+    }
+        
+    
+    
+
