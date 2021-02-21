@@ -1,0 +1,29 @@
+
+package cubenum;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class CubeNum {
+
+    
+    public static void main(String[] args) {
+     Scanner myVar = new Scanner(System.in);
+     System.out.println("Enter a number ");
+     int x = myVar.nextInt();
+     System.out.println("Input Number : " + x);
+     
+     int numCubed = x * x * x;
+     System.out.println("The number cubed is " + numCubed);
+     
+     for (int count = 1; count <= x; count ++)      {
+         System.out.println("The nummber " + count + " cubed is " + (count*count*count) );
+     }
+          
+     
+    }
+    
+}
