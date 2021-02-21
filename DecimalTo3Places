@@ -1,0 +1,29 @@
+
+package fptothree;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class FpToThree {
+
+    
+    public static void main(String[] args) {
+     Scanner myVar2 = new Scanner(System.in);
+     System.out.println("Enter a decimal number ");
+     double z = myVar2.nextDouble();
+     DecimalFormat f = new DecimalFormat("##.000");
+     System.out.println(f.format(z));
+     
+     Scanner myVar1 = new Scanner(System.in);
+     System.out.println("Enter a decimal number ");
+     float y = myVar1.nextFloat(); 
+     DecimalFormat a = new DecimalFormat("##.000");
+     System.out.println(a.format(y));
+     
+    }
+    
+}
