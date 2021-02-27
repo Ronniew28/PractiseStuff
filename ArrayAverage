@@ -1,0 +1,24 @@
+
+package arrayaverage;
+import java.util.Arrays;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayAverage {
+
+    
+    public static void main(String[] args) {
+        double [] numArray = { 23.8, 98.6, 77.7};
+        double sum = 0.0;
+        
+            for (double num: numArray) {
+                sum += num;
+            }
+            
+        double average = sum/numArray.length;
+        System.out.format("Average: %.2f" , average);
+    }
+    
+}
