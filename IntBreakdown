@@ -1,0 +1,34 @@
+
+package intbreakdown;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class IntBreakdown {
+
+    
+    public static void main(String[] args) {
+     Scanner myVar = new Scanner(System.in);
+     System.out.println("Enter any number ");
+     int num = myVar.nextInt();
+     
+     int temp = num;
+     int count = 0;
+     
+        while (num > 0) {
+            num = num / 10;
+            count++;
+        }
+            while(temp > 0) {
+                int digit = temp % 10;
+                System.out.println(digit);
+                temp = temp/10;
+                count --;
+            }
+     
+    }
+    
+}
