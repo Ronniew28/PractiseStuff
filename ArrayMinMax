@@ -1,0 +1,33 @@
+
+package arrayminmax;
+
+/**
+ *
+ * @author Ronnie W
+ */
+public class ArrayMinMax {
+
+    
+    public static void main(String[] args) {
+        int nums[] = new int[7];
+        int min, max;
+        
+        nums[0] = 53;
+        nums[1] = 82;
+        nums[2] = 23;
+        nums[3] = 76;
+        nums[4] = 19;
+        nums[5] = -42;
+        nums[6] = 87;
+                
+        min = max = nums[0];
+        
+        for(int i = 1; i < 7; i++) {
+            if(nums[i] < min) min = nums[i];
+            if(nums[i] > max) max = nums[i];
+        }
+        System.out.println(min + " " + max); //-42 87
+                
+    }
+    
+}
